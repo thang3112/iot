@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="datasensord.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Datasensors</title>
+</head>
+<body>
+  <header  class="menu">
+    <ul>
+        <li><a href="home.html">DASHBOARD</a></li>
+        <li><a href="datasensors.html">DataSenSors</a></li>
+        <li><a href="ActionHistory.html">Action history</a></li>
+    </ul> 
+    <div class="search-bar">
+        <input type="text" placeholder="Tìm kiếm...">
+        <button type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+      </div>   
+    <div class="profile">
+        <a href="http://127.0.0.1:5500/profile.html">
+        <img src="asets/beauty_1641004015189.JPG" alt="Profile">
+        </a>
+    </div>
+</header>
+    <h1 style="text-align: center;">Datasensors</h1>
+    <div class="search-ba">
+        <input type="date">
+        <button type="submit">Tìm kiếm</button>
+      </div>
+    <div>
+        <table id="Table">
+            <tr>
+              <th onclick="sortTable(0)">
+                ID 
+                <div class="sort-icon">
+                <div class="square"></div>
+                <div class="triangle"></div>
+              </div></th>
+              <th onclick="sortTable(1)">
+                Temperature 
+                <div class="sort-icon">
+                <div class="square"></div>
+                <div class="triangle"></div>
+              </div></th>
+              <th onclick="sortTable(2)">
+                Humidity 
+                <div class="sort-icon">
+                <div class="square"></div>
+                <div class="triangle"></div>
+              </div></th>
+              <th onclick="sortTable(3)">
+                Light 
+                <div class="sort-icon">
+                <div class="square"></div>
+                <div class="triangle"></div>
+              </div></th>
+              <th onclick="sortTable(4)">
+                time 
+                <div class="sort-icon">
+                <div class="square"></div>
+                <div class="triangle"></div>
+              </div></th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>24</td>
+              <td>50</td>
+              <td>97</td>
+              <td>15</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>23</td>
+                <td>60</td>
+                <td>90</td>
+                <td>16</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>12</td>
+                <td>65</td>
+                <td>83</td>
+                <td>17</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>11</td>
+                <td>50</td>
+                <td>70</td>
+                <td>18</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>10</td>
+                <td>40</td>
+                <td>66</td>
+                <td>19</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>10</td>
+                <td>40</td>
+                <td>50</td>
+                <td>20</td>
+              </tr>
+          </table>
+    </div>
+    <script src="Datasensors.js"></script>
+</body>
+</html>

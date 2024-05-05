@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ActionHistory.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Action History</title>
+</head>
+<body>
+    <header  class="menu">
+        <ul>
+            <li><a href="home.html">DASHBOARD</a></li>
+            <li><a href="datasensors.html">DataSenSors</a></li>
+            <li><a href="ActionHistory.html">Action history</a></li>
+        </ul> 
+        <div class="search-bar">
+            <input type="text" placeholder="Tìm kiếm...">
+            <button type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+          </div>   
+        <div class="profile">
+            <a href="http://127.0.0.1:5500/profile.html">
+            <img src="asets/beauty_1641004015189.JPG" alt="Profile">
+            </a>
+        </div>
+    </header>
+    <h1 style="text-align: center;">Action History</h1>
+    <div class="search-ba">
+        <input type="date">
+        <button type="submit">Tìm kiếm</button>
+      </div>
+    <div>
+        <table id="Table">
+            <tr>
+              <th onclick="sortTable(0)">
+                ID 
+                <div class="sort-icon">
+                <div class="square"></div>
+                <div class="triangle"></div>
+              </div></th>
+              <th onclick="sortTable(1)">
+                Deviceid 
+                <div class="sort-icon">
+                <div class="square"></div>
+                <div class="triangle"></div>
+              </div></th>
+              <th onclick="sortTable(2)">
+                Action 
+                <div class="sort-icon">
+                <div class="square"></div>
+                <div class="triangle"></div>
+              </div></th>
+              <th onclick="sortTable(2)">
+                time
+                <div class="sort-icon">
+                <div class="square"></div>
+                <div class="triangle"></div>
+              </div></th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>đèn</td>
+              <td>1</td>
+              <td>15</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>đèn</td>
+                <td>0</td>
+                <td>16</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>quạt</td>
+                <td>0</td>
+                <td>17</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>quạt</td>
+                <td>1</td>
+                <td>18</td>
+              </tr>
+          </table>
+    </div>
+</body>
+</html>

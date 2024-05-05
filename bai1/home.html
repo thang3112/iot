@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>dashboard</title>
+</head>
+<body>
+    <header  class="menu">
+        <ul>
+            <li><a href="#">DASHBOARD</a></li>
+            <li><a href="datasensors.html">DataSenSors</a></li>
+            <li><a href="ActionHistory.html">Action history</a></li>
+        </ul> 
+          
+        <div class="profile">
+            <a href="./profile.html">
+            <img src="asets/beauty_1641004015189.JPG" alt="Profile">
+            </a>
+        </div>
+    </header>
+    <br>
+    <div class="bo">
+    <div class="container">
+            <div class="box">
+                <h2>Nhiệt độ</h2>
+                <div>
+                <p>10 Độ</p>
+                <div class="container">
+                <div class="progress-bar">
+                    <div class="progress" style="width: 10%;"></div>
+                </div>
+                <div><i class="fas fa-thermometer-three-quarters"></i></div>
+                </div>
+                </div>
+            </div>
+            <div class="box">
+                <h2>Độ ẩm</h2>
+                <div>
+                    <p>40 %</p>
+                    <div class="container">
+                    <div class="progress-bar">
+                        <div class="progress-doam" style="width: 40%;"></div>
+                    </div>
+                    <div><i class="fas fa-snowflake"></i></div>
+                    </div>
+                    </div>
+            </div>
+            <div class="box">
+                <h2>Ánh sáng</h2>
+                <div>
+                    <p>66 %</p>
+                    <div class="container">
+                    <div class="progress-bar">
+                        <div class="progress-anhsang" style="width: 66%;"></div>
+                    </div>
+                    <div><i class="fas fa-lightbulb"></i></div>
+                    </div>
+                    </div>
+            </div>
+    </div>
+    <div class="container">
+        <div class="box2">
+            <canvas id="myChart"></canvas>
+        </div>
+        <div>
+        <div class="box3">  
+            <div style="text-align: center;">  
+        <img class="lightbulb" id="lightbulb" src="asets/off.png">
+        <br>
+        <div class="switch" id="switch" onclick="toggleLight()"></div>
+        </div> 
+        </div>
+        <div class="box3">
+            <div class="image" id="image">
+                <img src="/asets/fan2.png" alt="" width="100px" height="100px">
+            </div>
+            <div style="text-align: center; margin-top: 15px;">
+            <button onclick="startRotation()">ON</button>
+            <button onclick="stopRotation()">OFF</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <script src="home.js"></script>
+</body>
+</html>
